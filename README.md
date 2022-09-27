@@ -19,7 +19,7 @@ pip install meshcat-shapes
 |--------------------------|
 | <img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/frame.png" width="250"> |
 
-PRs are welcome: open one if you have implemented a shape that can be useful to others.
+**PRs are welcome:** open one if you have implemented a shape that can be useful to others.
 
 ## Usage
 
