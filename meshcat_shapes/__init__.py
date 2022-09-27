@@ -19,7 +19,7 @@
 Useful shapes to decorate MeshCat scenes.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 from .frame import frame
 
