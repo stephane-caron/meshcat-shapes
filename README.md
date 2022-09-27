@@ -1,9 +1,9 @@
 # meshcat-shapes
 
 [![Build](https://img.shields.io/github/workflow/status/stephane-caron/meshcat-shapes/CI)](https://github.com/stephane-caron/meshcat-shapes/actions)
-[![Coverage](https://coveralls.io/repos/github/stephane-caron/meshcat-shapes/badge.svg?branch=master)](https://coveralls.io/github/stephane-caron/meshcat-shapes?branch=master)
+[![Coverage](https://coveralls.io/repos/github/stephane-caron/meshcat-shapes/badge.svg?branch=main)](https://coveralls.io/github/stephane-caron/meshcat-shapes?branch=main)
 [![PyPI version](https://img.shields.io/pypi/v/meshcat-shapes)](https://pypi.org/project/meshcat-shapes/)
-[![Contributing](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/stephane-caron/meshcat-shapes/tree/master/CONTRIBUTING.md)
+[![Contributing](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/stephane-caron/meshcat-shapes/tree/main/CONTRIBUTING.md)
 
 Useful shapes to decorate MeshCat scenes.
 
