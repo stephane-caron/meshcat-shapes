@@ -16,12 +16,23 @@ pip install meshcat-shapes
 
 ## Shapes
 
-| Shape | Preview |
-|-------|---------|
-| Frame | <img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/frame.png" width="300"> |
+| Preview | Name | Function |
+|---------|------|----------|
+| <img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/frame.png" width="300"> | Frame | ``meshcat_shapes.frame`` |
 
 ## Usage
 
 ```python
-...
+import meshcat
+import meshcat_shapes
+
+vis = meshcat.Visualizer().open()
+
+meshcat_shapes.frame(
+    vis["my_frame"],
+    axis_length=0.2,
+    axis_thickness=0.01,
+    opacity=0.8,
+    origin_radius=0.02,
+)
 ```
