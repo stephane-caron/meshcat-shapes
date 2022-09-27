@@ -30,4 +30,4 @@ class TestFrame(unittest.TestCase):
         self.visualizer = meshcat.Visualizer().open()
 
     def test_frame(self):
-        meshcat_shapes.set_frame(self.visualizer["test_frame"])
+        meshcat_shapes.frame(self.visualizer["test_frame"])
