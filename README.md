@@ -18,7 +18,7 @@ pip install meshcat-shapes
 
 | Shape | Preview |
 |-------|---------|
-| Frame | <img src="gallery/frame.png" width="400"> |
+| Frame | <img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/frame.png" width="300"> |
 
 ## Usage
 
