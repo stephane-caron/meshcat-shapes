@@ -24,7 +24,7 @@ import numpy as np
 
 
 def __attach_axes(
-    frame: meshcat.Visualizer,
+    handle: meshcat.Visualizer,
     length: float = 0.05,
     thickness: float = 0.002,
     opacity: float = 1.0,
@@ -33,7 +33,7 @@ def __attach_axes(
     Attach a set of three basis axes to a MeshCat handle.
 
     Args:
-        frame: MeshCat handle to attach the basis axes to.
+        handle: MeshCat handle to attach the basis axes to.
         length: Length of axis unit vectors.
         thickness: Thickness of axis unit vectors.
         opacity: Opacity of all three unit vectors.
@@ -56,12 +56,12 @@ def __attach_axes(
         )
         transform_cylinder_to_body[0:3, 3] = position_cylinder_in_body[i]
         cylinder = meshcat.geometry.Cylinder(length, thickness)
-        frame[dir_name].set_object(cylinder, material)
-        frame[dir_name].set_transform(transform_cylinder_to_body)
+        handle[dir_name].set_object(cylinder, material)
+        handle[dir_name].set_transform(transform_cylinder_to_body)
 
 
-def set_frame(
-    frame: meshcat.Visualizer,
+def frame(
+    handle: meshcat.Visualizer,
     axis_length: float = 0.1,
     axis_thickness: float = 0.005,
     opacity: float = 1.0,
@@ -72,7 +72,7 @@ def set_frame(
     Set MeshCat handle to a frame, represented by an origin and three axes.
 
     Args:
-        frame: MeshCat handle to attach the frame to.
+        handle: MeshCat handle to attach the frame to.
         axis_length: Length of axis unit vectors, in [m].
         axis_thickness: Thickness of axis unit vectors, in [m].
         opacity: Opacity of all three unit vectors.
@@ -87,5 +87,5 @@ def set_frame(
         color=origin_color, opacity=opacity
     )
     sphere = meshcat.geometry.Sphere(origin_radius)
-    frame.set_object(sphere, material)
-    __attach_axes(frame, axis_length, axis_thickness, opacity)
+    handle.set_object(sphere, material)
+    __attach_axes(handle, axis_length, axis_thickness, opacity)

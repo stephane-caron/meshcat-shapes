@@ -21,8 +21,8 @@ Collection of shapes to decorate MeshCat scenes.
 
 __version__ = "0.1.0"
 
-from .frame import set_frame
+from .frame import frame
 
 __all__ = [
-    "set_frame",
+    "frame",
 ]
