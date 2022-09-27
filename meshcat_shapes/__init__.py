@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Collection of shapes to decorate MeshCat scenes.
+Useful shapes to decorate MeshCat scenes.
 """
 
 __version__ = "0.1.0"
