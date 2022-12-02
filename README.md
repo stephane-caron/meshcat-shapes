@@ -36,4 +36,11 @@ meshcat_shapes.frame(
     opacity=0.8,
     origin_radius=0.02,
 )
+
+meshcat_shapes.point(
+    vis["red_point"],
+    opacity=0.3,
+    radius=0.05,
+    color=0xFF0000,
+)
 ```
