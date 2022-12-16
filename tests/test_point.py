@@ -25,5 +25,5 @@ class TestFrame(unittest.TestCase):
     def setUp(self):
         self.visualizer = meshcat.Visualizer().open()
 
-    def test_frame(self):
-        meshcat_shapes.frame(self.visualizer["test_frame"])
+    def test_point(self):
+        meshcat_shapes.point(self.visualizer["test_frame"])
