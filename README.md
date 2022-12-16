@@ -1,6 +1,6 @@
 # meshcat-shapes
 
-[![Build](https://img.shields.io/github/workflow/status/stephane-caron/meshcat-shapes/CI)](https://github.com/stephane-caron/meshcat-shapes/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/stephane-caron/meshcat-shapes/build.yml?branch=main)](https://github.com/stephane-caron/qpsolvers/actions)
 [![Coverage](https://coveralls.io/repos/github/stephane-caron/meshcat-shapes/badge.svg?branch=main)](https://coveralls.io/github/stephane-caron/meshcat-shapes?branch=main)
 [![PyPI version](https://img.shields.io/pypi/v/meshcat-shapes)](https://pypi.org/project/meshcat-shapes/)
 [![Contributing](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/stephane-caron/meshcat-shapes/tree/main/CONTRIBUTING.md)
