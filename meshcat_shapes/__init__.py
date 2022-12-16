@@ -19,10 +19,12 @@
 Useful shapes to decorate MeshCat scenes.
 """
 
-__version__ = "0.1.1"
+__version__ = "0.2.0"
 
 from .frame import frame
+from .point import point
 
 __all__ = [
     "frame",
+    "point",
 ]
