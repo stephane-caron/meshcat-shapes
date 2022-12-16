@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.0] - 2022/12/16
+
+### Added
+
+- Point shape
+
 ## [0.1.1] - 2022/09/27
 
 ### Fixed
