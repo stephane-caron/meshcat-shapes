@@ -102,8 +102,8 @@ class TextTexture(Texture):
 def textarea(
     handle: meshcat.Visualizer,
     text: str,
-    width: float = 10.0,
-    height: float = 10.0,
+    width: float = 1.0,
+    height: float = 1.0,
     font_size: float = 100,
     font_face: str = "sans-serif",
 ) -> None:
