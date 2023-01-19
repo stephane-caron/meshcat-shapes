@@ -42,3 +42,5 @@ if __name__ == "__main__":
 
     trans = meshcat.transformations.translation_matrix([0.0, 1.0, 0.2])
     vis["bar"].set_transform(trans @ Rz @ Rx)
+
+    input("Press Enter to exit...")
