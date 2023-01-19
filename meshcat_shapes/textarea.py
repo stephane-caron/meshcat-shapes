@@ -22,7 +22,6 @@
 #     Copyright (c) 2018 Shen Shen
 #     License: MIT
 
-
 """Text area.
 
 Notes:
@@ -35,21 +34,54 @@ from meshcat.geometry import Geometry, Mesh, MeshPhongMaterial, Texture
 
 
 class Plane(Geometry):
-    def __init__(self, width=1, height=1, widthSegments=1, heightSegments=1):
-        super(Plane, self).__init__()
-        self.width = width
-        self.height = height
-        self.widthSegments = widthSegments
-        self.heightSegments = heightSegments
+    """Plane segment.
 
-    def lower(self, object_data):
+    Attributes:
+        height: Plane segment height.
+        height_segments: Number of height segments.
+        width: Plane segment width.
+        width_segments: Number of width segments.
+    """
+
+    height: float
+    height_segments: int
+    width: float
+    width_segments: int
+
+    def __init__(
+        self,
+        width: float = 1.0,
+        height: float = 1.0,
+        width_segments: int = 1,
+        height_segments: int = 1,
+    ):
+        """Initialize plane segment.
+
+        Args:
+            width: Plane segment width.
+            height: Plane segment height.
+            width_segments: Number of width segments.
+            height_segments: Number of height segments.
+        """
+        super().__init__()
+        self.height = height
+        self.height_segments = height_segments
+        self.width = width
+        self.width_segments = width_segments
+
+    def lower(self, _):
+        """Serialize object.
+
+        Args:
+            object_data: Unused.
+        """
         return {
             "uuid": self.uuid,
             "type": "PlaneGeometry",
             "width": self.width,
             "height": self.height,
-            "widthSegments": self.widthSegments,
-            "heightSegments": self.heightSegments,
+            "widthSegments": self.width_segments,
+            "heightSegments": self.height_segments,
         }
 
 
@@ -69,7 +101,7 @@ class TextTexture(Texture):
     def __init__(
         self,
         text: str,
-        font_size: float = 100,
+        font_size: int = 100,
         font_face: str = "sans-serif",
     ):
         """Initialize text texture.
@@ -79,12 +111,12 @@ class TextTexture(Texture):
             font_size: Font size in px.
             font_face: Font face.
         """
-        super(TextTexture, self).__init__()
+        super().__init__()
         self.font_face = font_face
         self.font_size = font_size
         self.text = text
 
-    def lower(self, object_data):
+    def lower(self, _):
         """Serialize texture.
 
         Args:
@@ -104,7 +136,7 @@ def textarea(
     text: str,
     width: float = 1.0,
     height: float = 1.0,
-    font_size: float = 100,
+    font_size: int = 100,
     font_face: str = "sans-serif",
 ) -> None:
     """
@@ -126,7 +158,9 @@ def textarea(
         Mesh(
             Plane(width=width, height=height),
             MeshPhongMaterial(
-                map=TextTexture(text, font_size=font_size, font_face=font_face),
+                map=TextTexture(
+                    text, font_size=font_size, font_face=font_face
+                ),
                 transparent=True,
                 needsUpdate=True,
             ),
