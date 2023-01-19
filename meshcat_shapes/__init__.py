@@ -23,8 +23,10 @@ __version__ = "0.2.0"
 
 from .frame import frame
 from .point import point
+from .textarea import textarea
 
 __all__ = [
     "frame",
     "point",
+    "textarea",
 ]
