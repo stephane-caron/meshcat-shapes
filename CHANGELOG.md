@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Example: annotated frames
+- Example: text areas
+- Text area shape
+
 ## [0.2.0] - 2022/12/16
 
 ### Added
