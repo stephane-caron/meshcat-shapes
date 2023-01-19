@@ -44,8 +44,5 @@ meshcat_shapes.point(
     color=0xFF0000,
 )
 
-meshcat_shapes.textarea(
-    vis["text"],
-    "super easy",
-)
+meshcat_shapes.textarea(vis["text"], "super easy")
 ```
