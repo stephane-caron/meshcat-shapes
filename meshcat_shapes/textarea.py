@@ -54,15 +54,42 @@ class Plane(Geometry):
 
 
 class TextTexture(Texture):
-    def __init__(self, text, font_size=100, font_face="sans-serif"):
+    """Text texture.
+
+    Attributes:
+        font_face: Font face.
+        font_size: Font size in px.
+        text: Text content.
+    """
+
+    font_face: str
+    font_size: int
+    text: str
+
+    def __init__(
+        self,
+        text: str,
+        font_size: float = 100,
+        font_face: str = "sans-serif",
+    ):
+        """Initialize text texture.
+
+        Args:
+            text: Text content.
+            font_size: Font size in px.
+            font_face: Font face.
+        """
         super(TextTexture, self).__init__()
-        self.text = text
-        # font_size will be passed to the JS side as is; however if the
-        # text width exceeds canvas width, font_size will be reduced.
-        self.font_size = font_size
         self.font_face = font_face
+        self.font_size = font_size
+        self.text = text
 
     def lower(self, object_data):
+        """Serialize texture.
+
+        Args:
+            object_data: Unused.
+        """
         return {
             "uuid": self.uuid,
             "type": "_text",
