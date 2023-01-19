@@ -18,6 +18,7 @@
 import unittest
 
 import meshcat
+
 import meshcat_shapes
 
 
@@ -25,5 +26,5 @@ class TestFrame(unittest.TestCase):
     def setUp(self):
         self.visualizer = meshcat.Visualizer().open()
 
-    def test_point(self):
-        meshcat_shapes.point(self.visualizer["test_point"])
+    def test_textarea(self):
+        meshcat_shapes.textarea(self.visualizer["test_text"], text="easy")
