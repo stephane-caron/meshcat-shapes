@@ -104,7 +104,8 @@ def textarea(
     text: str,
     width: float = 10.0,
     height: float = 10.0,
-    **kwargs,
+    font_size: float = 100,
+    font_face: str = "sans-serif",
 ) -> None:
     """
     Set MeshCat handle to a text area.
@@ -114,7 +115,8 @@ def textarea(
         text: Content to write inside the text area.
         width: Text area width.
         height: Text area height.
-        kwargs: Keyword arguments, see :class:`TextTexture`.
+        font_size: Font size in px.
+        font_face: Font face.
 
     Note:
         As per the de-facto standard (Blender, OpenRAVE, RViz, ...), the
@@ -124,7 +126,7 @@ def textarea(
         Mesh(
             Plane(width=width, height=height),
             MeshPhongMaterial(
-                map=TextTexture(text, **kwargs),
+                map=TextTexture(text, font_size=font_size, font_face=font_face),
                 transparent=True,
                 needsUpdate=True,
             ),
