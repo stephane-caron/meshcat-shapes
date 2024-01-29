@@ -139,8 +139,7 @@ def textarea(
     font_size: int = 100,
     font_face: str = "sans-serif",
 ) -> None:
-    """
-    Set MeshCat handle to a text area.
+    """Set MeshCat handle to a text area.
 
     Args:
         handle: MeshCat handle to attach the frame to.

@@ -15,9 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Point represented by a sphere.
-"""
+"""Point represented by a sphere."""
 
 import meshcat
 
@@ -28,8 +26,7 @@ def point(
     color: int = 0x000000,
     opacity: float = 1.0,
 ) -> None:
-    """
-    Set MeshCat handle to a point, represented by a sphere.
+    """Set MeshCat handle to a point, represented by a sphere.
 
     Args:
         handle: MeshCat handle to attach the frame to.
