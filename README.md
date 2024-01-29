@@ -15,9 +15,9 @@ pip install meshcat-shapes
 
 ## Shapes
 
-| ``meshcat_shapes.frame`` | ``meshcat_shapes.point`` | ``meshcat_shapes.textarea`` |
+| [``meshcat_shapes.frame``](https://stephane-caron.github.io/meshcat-shapes/shapes.html#module-meshcat_shapes.frame) | ``meshcat_shapes.point`` | ``meshcat_shapes.textarea`` |
 |--------------------------|--------------------------|-----------------------------|
-| <img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/frame.png" width="250"> | <img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/point.png" width="250"> | <img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/textarea.png" width="250"> |
+| <a href="https://stephane-caron.github.io/meshcat-shapes/shapes.html#module-meshcat_shapes.frame"><img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/frame.png" width="250"></a> | <img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/point.png" width="250"> | <img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/textarea.png" width="250"> |
 
 PRs are welcome: open one if you have implemented a shape that can be useful to others.
 
