@@ -15,7 +15,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Point represented by a sphere."""
+"""Point represented by a sphere.
+
+Example:
+    .. code:: python
+
+        import meshcat
+        import meshcat_shapes
+
+        vis = meshcat.Visualizer().open()
+
+        meshcat_shapes.point(
+            vis["red_point"],
+            opacity=0.3,
+            radius=0.05,
+            color=0xFF0000,
+        )
+"""
 
 import meshcat
 
