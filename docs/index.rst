@@ -1,8 +1,10 @@
 .. title:: Table of Contents
 
-.. mdinclude:: ../README.md
+Useful shapes to decorate MeshCat scenes.
 
 .. toctree::
     :maxdepth: 1
 
-    shapes.rst
+    frame.rst
+    point.rst
+    textarea.rst
