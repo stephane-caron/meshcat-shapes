@@ -3,5 +3,5 @@
 .coverage
 .ropeproject
 .tox
+_build
 dist
-doc/build
