@@ -15,11 +15,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Useful shapes to decorate MeshCat scenes.
-"""
+"""Useful shapes to decorate MeshCat scenes."""
 
-__version__ = "0.3.0"
+__version__ = "1.0.0"
 
 from .frame import frame
 from .point import point

@@ -15,9 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Frames represented by an origin and three colored axes.
-"""
+"""Frames represented by an origin and three colored axes."""
 
 import meshcat
 import numpy as np
@@ -29,8 +27,7 @@ def __attach_axes(
     thickness: float = 0.002,
     opacity: float = 1.0,
 ) -> None:
-    """
-    Attach a set of three basis axes to a MeshCat handle.
+    """Attach a set of three basis axes to a MeshCat handle.
 
     Args:
         handle: MeshCat handle to attach the basis axes to.
@@ -68,8 +65,7 @@ def frame(
     origin_color: int = 0x000000,
     origin_radius: float = 0.01,
 ) -> None:
-    """
-    Set MeshCat handle to a frame, represented by an origin and three axes.
+    """Set MeshCat handle to a frame, represented by an origin and three axes.
 
     Args:
         handle: MeshCat handle to attach the frame to.
