@@ -24,6 +24,16 @@
 
 """Text area.
 
+Example:
+    .. code:: python
+
+        import meshcat
+        import meshcat_shapes
+
+        vis = meshcat.Visualizer().open()
+
+        meshcat_shapes.textarea(vis["text"], "super easy")
+
 Notes:
     To be simplified once https://github.com/rdeits/meshcat-python/pull/111
     makes it to a released version of meshcat-python.
