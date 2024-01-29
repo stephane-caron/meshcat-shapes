@@ -1,5 +1,9 @@
 .. title:: Table of Contents
 
+##############
+meshcat-shapes
+##############
+
 Useful shapes to decorate MeshCat scenes.
 
 .. toctree::
