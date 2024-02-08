@@ -25,15 +25,7 @@ extensions = [
 ]
 
 # List of modules to be mocked up
-autodoc_mock_imports = [
-    "ecos",
-    "gurobipy",
-    "hpipm_python",
-    "mosek",
-    "nppro",
-    "osqp",
-    "qpoases",
-]
+autodoc_mock_imports = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = []
