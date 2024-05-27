@@ -5,9 +5,11 @@
 [![Coverage](https://coveralls.io/repos/github/stephane-caron/meshcat-shapes/badge.svg?branch=main)](https://coveralls.io/github/stephane-caron/meshcat-shapes?branch=main)
 [![PyPI version](https://img.shields.io/pypi/v/meshcat-shapes)](https://pypi.org/project/meshcat-shapes/)
 
-Useful shapes to decorate MeshCat scenes.
+Additional shapes to decorate MeshCat scenes (frames, text, ...).
 
 ## Installation
+
+### From PyPI
 
 ```console
 pip install meshcat-shapes
