@@ -3,11 +3,18 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/stephane-caron/meshcat-shapes/build.yml?branch=main)](https://github.com/stephane-caron/meshcat-shapes/actions)
 [![Documentation](https://img.shields.io/github/actions/workflow/status/stephane-caron/meshcat-shapes/docs.yml?branch=main&label=docs)](https://stephane-caron.github.io/meshcat-shapes/)
 [![Coverage](https://coveralls.io/repos/github/stephane-caron/meshcat-shapes/badge.svg?branch=main)](https://coveralls.io/github/stephane-caron/meshcat-shapes?branch=main)
+[![Conda version](https://img.shields.io/conda/vn/conda-forge/meshcat-shapes.svg)](https://anaconda.org/conda-forge/meshcat-shapes)
 [![PyPI version](https://img.shields.io/pypi/v/meshcat-shapes)](https://pypi.org/project/meshcat-shapes/)
 
 Additional shapes to decorate MeshCat scenes (frames, text, ...).
 
 ## Installation
+
+### From conda-forge
+
+```console
+conda install -c conda-forge qpsolvers
+```
 
 ### From PyPI
 
