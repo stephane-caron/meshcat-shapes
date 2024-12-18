@@ -6,7 +6,7 @@
 [![Conda version](https://img.shields.io/conda/vn/conda-forge/meshcat-shapes.svg)](https://anaconda.org/conda-forge/meshcat-shapes)
 [![PyPI version](https://img.shields.io/pypi/v/meshcat-shapes)](https://pypi.org/project/meshcat-shapes/)
 
-Additional shapes to decorate MeshCat scenes (frames, text, ...).
+Additional shapes to decorate [MeshCat](https://github.com/meshcat-dev/meshcat-python) scenes (frames, text, ...).
 
 ## Installation
 
