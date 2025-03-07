@@ -13,7 +13,7 @@ Additional shapes to decorate [MeshCat](https://github.com/meshcat-dev/meshcat-p
 ### From conda-forge
 
 ```console
-conda install -c conda-forge qpsolvers
+conda install -c conda-forge meshcat-shapes
 ```
 
 ### From PyPI
