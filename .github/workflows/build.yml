@@ -9,14 +9,13 @@ on:
 
 jobs:
     build:
+        name: "Test with Python ${{ matrix.python-version }}"
         runs-on: ubuntu-latest
         env:
             USING_COVERAGE: "3.9"
-
         strategy:
             matrix:
                 python-version: ["3.9", "3.10", "3.11", "3.12"]
-
         steps:
             - name: "Checkout sources"
               uses: actions/checkout@v3
