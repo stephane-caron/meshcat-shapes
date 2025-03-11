@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Changed
+
+- Bump minimum Python version to 3.9
+- CICD: Update checkout action
+
 ## [0.3.0] - 2023/01/19
 
 ### Added
