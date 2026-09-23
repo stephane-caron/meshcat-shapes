@@ -1,55 +1,31 @@
 # meshcat-shapes
 
-[![Build](https://img.shields.io/github/actions/workflow/status/stephane-caron/meshcat-shapes/build.yml?branch=main)](https://github.com/stephane-caron/meshcat-shapes/actions)
-[![Documentation](https://img.shields.io/github/actions/workflow/status/stephane-caron/meshcat-shapes/docs.yml?branch=main&label=docs)](https://stephane-caron.github.io/meshcat-shapes/)
-[![Coverage](https://coveralls.io/repos/github/stephane-caron/meshcat-shapes/badge.svg?branch=main)](https://coveralls.io/github/stephane-caron/meshcat-shapes?branch=main)
-[![Conda version](https://img.shields.io/conda/vn/conda-forge/meshcat-shapes.svg)](https://anaconda.org/conda-forge/meshcat-shapes)
-[![PyPI version](https://img.shields.io/pypi/v/meshcat-shapes)](https://pypi.org/project/meshcat-shapes/)
+This repository has moved to Codeberg:
 
-Additional shapes to decorate [MeshCat](https://github.com/meshcat-dev/meshcat-python) scenes:
+<p align="center">
+  <a href="https://codeberg.org/stephane-caron/meshcat-shapes">
+    <img src="https://codeberg.org/Codeberg/GetItOnCodeberg/raw/branch/main/get-it-on-blue-on-white.png" alt="Get it on Codeberg" height="80">
+  </a>
+</p>
 
-| [``meshcat_shapes.frame``](https://stephane-caron.github.io/meshcat-shapes/shapes.html#module-meshcat_shapes.frame) | [``meshcat_shapes.point``](https://stephane-caron.github.io/meshcat-shapes/shapes.html#module-meshcat_shapes.point) | [``meshcat_shapes.textarea``](https://stephane-caron.github.io/meshcat-shapes/shapes.html#module-meshcat_shapes.textarea) |
-|--------------------------|--------------------------|-----------------------------|
-| <a href="https://stephane-caron.github.io/meshcat-shapes/shapes.html#module-meshcat_shapes.frame"><img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/frame.png" width="250"></a> | <a href="https://stephane-caron.github.io/meshcat-shapes/shapes.html#module-meshcat_shapes.point"><img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/point.png" width="250"></a> | <a href="https://stephane-caron.github.io/meshcat-shapes/shapes.html#module-meshcat_shapes.textarea"><img src="https://github.com/stephane-caron/meshcat-shapes/raw/main/gallery/textarea.png" width="250"></a> |
+Its new address is: **https://codeberg.org/stephane-caron/meshcat-shapes**
 
-PRs are welcome: open one if you have implemented a shape that can be useful to others.
+Codeberg is a free and open-source code forge maintained by a non-profit organization. Development, issues and pull requests now happen over there, and this repository is not mirrored.
 
-## Installation
+## For users
 
-### From conda-forge
+Nothing changes for users installing via pip:
 
-```console
-conda install -c conda-forge meshcat-shapes
-```
-
-### From PyPI
-
-```console
+```bash
 pip install meshcat-shapes
 ```
 
-## Usage
+## For contributors
 
-```python
-import meshcat
-import meshcat_shapes
+If you have a local clone of this repository, you can point it at the new remote:
 
-vis = meshcat.Visualizer().open()
-
-meshcat_shapes.frame(
-    vis["my_frame"],
-    axis_length=0.2,
-    axis_thickness=0.01,
-    opacity=0.8,
-    origin_radius=0.02,
-)
-
-meshcat_shapes.point(
-    vis["red_point"],
-    opacity=0.3,
-    radius=0.05,
-    color=0xFF0000,
-)
-
-meshcat_shapes.textarea(vis["text"], "super easy")
+```bash
+git remote set-url origin https://codeberg.org/stephane-caron/meshcat-shapes.git
 ```
+
+Issues and pull requests are welcome on Codeberg. This GitHub repository is archived and no longer receives updates.
